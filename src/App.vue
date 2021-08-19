@@ -1,15 +1,19 @@
 <template>
 	<div id="app" :style="backgroundGradient" @mousemove="redefinePositions" @mouseleave="resetPositions">
-		<div id="nav" />
+		<Header />
 		<RouterView />
 	</div>
 </template>
 
 <script>
 import { bgColorFrom, bgColorTo } from './styles/variables.scss';
+import Header from '@/components/Header/Header.vue';
 
 export default {
 	name: 'App',
+	components: {
+		Header
+	},
 	data(){
 		return {
 			gradientX: '50%',
