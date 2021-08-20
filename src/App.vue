@@ -52,10 +52,14 @@ export default {
 		font-family: 'Barlow Semi Condensed', Helvetica, Arial, sans-serif;
 		//background: radial-gradient(circle at top, $background-from, $background-to);
 		height: 100%;
+		min-height: 100vh;
 
 		.view {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1;
 			width: 100%;
-			height: 100%;
 			max-width: 800px;
 			margin: 0 auto;
 			padding: rfs(30px);
